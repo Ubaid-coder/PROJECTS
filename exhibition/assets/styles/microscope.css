@@ -1,0 +1,157 @@
+
+#microscope {
+  background: linear-gradient(135deg, #6890bd 0%, #b3c6e7 100%);
+
+
+}
+
+.microscope-overlay {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 10;
+  color: white;
+}
+
+#lookThroughBtn {
+  padding: 12px 24px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lens-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 20;
+  
+}
+
+video{
+  overflow: hidden;
+}
+
+.lens-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+ 
+}
+
+.lens-overlay button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+
+.lens-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  overflow-x: hidden;
+}
+
+/* Allow vertical scroll gestures on canvas */
+#webgl{
+  touch-action: pan-y;
+}
+
+.items-container {
+  padding-top: 50px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+
+}
+
+.microscope-items {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  z-index: 10;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 5px solid #ffffff;
+  z-index: 1;
+  
+}
+
+.microscope-items video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+
+}
+
+.microscopeVideo {
+  width: 800px;
+  height: 800px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+}
+
+.items-container p,
+.microscope-items {
+  margin-right: 50px;
+}
+
+.items-container p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.items-container .bacteria {
+  color: #3df73d;
+}
+
+.items-container .molecules {
+  color: #f7db3d;
+}
+
+.items-container .genes {
+  color: #f73d3d;
+}
+
+
+@media (width <=710px) {
+  .microscope-items {
+    height: 50px;
+    width: 50px;
+  }
+
+  .lens-content{
+    height: 300px;
+    width: 300px;
+  }
+}

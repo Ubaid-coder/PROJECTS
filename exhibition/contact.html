@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | VirtualX Lab</title>
+
+  <link rel="stylesheet" href="./assets/styles/utils.css" />
+  <link rel="stylesheet" href="./assets/styles/navbar.css" />
+  <link rel="stylesheet" href="./assets/styles/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script defer src="./assets/scripts/navbar.js"></script>
+
+  
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="/"><img src="/assets/images/logo.png" alt="VirtualX Lab Logo" /></a>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/lab.html">Lab</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <i class="fa-solid fa-bars"></i>
+    <div class="menu-overlay">
+      <ul class="mobile-nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/lab.html">Lab</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p>Or email us directly at <a href="mailto:info@virtualxlab.com">LabX@virtualxlab.com</a></p>
+        <p>VirtualX Lab, 123 Science Ave, Knowledge City</p>
+      </div>
+    </div>
+    
+  </section>
+
+  <canvas id="webgl"></canvas>
+
+  <script type="module" src="./assets/scripts/contact3d.js"></script>
+  <script type="module" src="./assets/scripts/formSubmit.js"></script>
+</body>
+
+</html>

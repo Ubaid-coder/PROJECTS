@@ -1,0 +1,118 @@
+header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    background: #00000096;
+    justify-content: space-between;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
+header:hover{
+    background-color: #00000083;
+}
+
+
+
+.logo img {
+    height: 200px;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: black;
+    margin: 0px 50px;
+}
+
+li button {
+    color: #020202;
+    text-decoration: none;
+    border: none;
+}
+
+
+
+.menu-overlay {
+    background-color: #e7e6e6;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+
+header ul li{
+    position: relative;
+
+}
+header ul li a:hover{
+    color: #04a2e0;
+
+
+}
+header ul li:hover{
+    color: #04a2e0;
+
+
+}
+
+
+header i {
+    font-size: 0;
+    cursor: pointer;
+    color: white;
+    margin-right: 10%;
+    z-index: 200;
+    visibility: hidden;
+    display: none;
+    
+}
+
+
+
+.mobile-nav-links {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.mobile-nav-links li a {
+    list-style: none;
+    text-decoration: none;
+    color: #04a2e0;
+}
+
+.mobile-nav-links li a:hover {
+    color: #4accff;
+}
+
+
+@media (width <=580px) {
+    .nav-links {
+        display: none;
+    }
+
+    header i {
+        font-size: 50px;
+        visibility: visible;
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+
+}
