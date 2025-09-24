@@ -1,0 +1,4 @@
+{
+  "builds": [{ "src": "projects/exhibition/**", "use": "@vercel/static" }],
+  "routes": [{ "src": "/(.*)", "dest": "projects/exhibition/$1" }]
+}
