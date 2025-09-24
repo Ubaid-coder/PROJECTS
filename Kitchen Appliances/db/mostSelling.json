@@ -1,0 +1,98 @@
+[
+
+    
+      {
+        "id": 1,
+        "title": "Electric Kettle",
+        "price": 15.99,
+        "discountPrice":12.79,
+        "discount": "20% OFF",
+        "sold": "70K",
+        "image": "./assets/monstSelling1.png",
+        "rating":5,
+        "availability":"In stock"
+      },
+      {
+        "id": 2,
+        "title": "Toaster",
+        "price": 15,
+        "discountPrice":9.75,
+        "discount": "35% OFF",
+        "sold": "66K",
+        "image": "./assets/monstSelling2.png",
+        "rating":5,
+        "availability":"In stock"
+      },
+      {
+        "id": 3,
+        "title": "Food Chopper",
+        "price": 13,
+        "discountPrice":5.2,
+        "discount": "60% OFF",
+        "sold": "63K",
+        "image": "./assets/monstSelling3.png",
+        "rating":5,
+        "availability":"In stock"
+      },
+
+    
+      {
+        "id": 4,
+        "title": "Spice Jars",
+        "price": 10,
+        "discountPrice":9,
+        "discount": "20% OFF",
+        "sold": "55K",
+        "image": "./assets/monstSelling4.png",
+        "rating":5,
+        "availability":"In stock"
+      },
+      {
+        "id": 5,
+        "title": "Steamers",
+        "price": 25,
+        "discountPrice":22,
+        "discount": "12% OFF",
+        "sold": "50K",
+        "image": "./assets/monstSelling5.png",
+        "rating":5,
+        "availability":"In stock"
+      },
+      {
+        "id": 6,
+        "title": "Food Chopper",
+        "price": 10,
+        "discountPrice":7.8,
+        "discount": "22% OFF",
+        "sold": "48K",
+        "image": "./assets/monstSelling6.png",
+        "rating":5,
+        "availability":"In stock"
+      },
+      {
+        "id": 7,
+        "title": "Refrigerator",
+        "price": 350,
+        "discountPrice":245,
+        "discount": "30% OFF",
+        "sold": "33K",
+        "image": "./assets/monstSelling7.png",
+        "rating":5,
+        "availability":"In stock"
+      },
+      {
+        "id": 8,
+        "title": "Juicer",
+        "price": 30,
+        "discountPrice":21.6,
+        "discount": "28% OFF",
+        "sold": "20K",
+        "image": "./assets/monstSelling8.png",
+        "rating":5,
+        "availability":"In stock"
+      }
+    
+    
+  
+  
+]

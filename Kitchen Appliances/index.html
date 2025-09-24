@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/utils.css">
+  
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+      <a href="#">
+        <span class="navbar-brand text-light"><i class="fa-solid fa-kitchen-set"></i> TASHA</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse justify-content-center navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="./cookware.html">Cookware</a></li>
+              <li><a class="dropdown-item" href="./refrigeration.html">Refrigeration</a></li>
+              <li><a class="dropdown-item" href="./appliances.html">Appliances</a></li>
+              <li><a class="dropdown-item food-storage" href="./foodStorage.html">Food Storage</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="./support.html">Support</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class=" fontawesomes collapse navbar-collapse" id="navbarNavDropdown">
+
+        <a href="/profile.html">
+          <i style="color: white;" class="fa-solid fa-user"></i>
+        <span role="button">Profile</span>
+        </a>
+        
+        <a href="/Order.html">
+          <i style="color: white;" class="fa-solid fa-heart"></i>
+        <span role="button">Order</span>
+        </a>
+        
+        <a href="/Cart.html">
+          <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
+        <span role="button">Cart</span>
+        </a>
+      </div>
+
+
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="./assets/home1.png" class="d-block  w-100" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="./assets/home2.png" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="./assets/home3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section class=" d-flex gap-5  mb-5 container  mt-5 flex-wrap ">
+
+    <h1 class="w-100 text-center text-center " style="background-color: #000a3bdb;">Most Selling Of The Month</h1>
+
+  </section>
+
+
+  <section class="  d-flex gap-5  mb-5 container  mt-5 flex-wrap">
+
+    <h1 class=" w-100 text-center text-center " style="background-color: #000a3bdb">Categories</h1>
+
+    <a href=" ./cookware.html" type="button"
+      class="mb-5 btn btn-outline-danger mt-5 mb-1  position-relative">Cookware</a>
+
+
+      <div id="cookwareSection" data-aos="zoom-in-up" data-aos-duration="1000"
+        class="d-flex gap-5  mb-5 container  mt-5 flex-wrap">
+
+
+
+      </div>
+
+
+      <div class=" w-100 scale my-5"></div>
+
+      <a href="./refrigeration.html" type="button"
+        class="btn btn-outline-dark mt-5 mb-5 mb-1  position-relative">Refrigeration</a>
+
+      <div id="refrigerationSection" data-aos="zoom-in-up" data-aos-duration="1000"
+        class="d-flex gap-5  mb-5 container  mt-5 flex-wrap">
+
+
+      </div>
+
+      <div class=" w-100 scale my-5"></div>
+
+      <a href="./appliances.html" type="button"
+        class="btn btn-outline-success mt-5 mb-5 mb-1  position-relative">Appliances</a>
+
+      <div id="appliancesSection" data-aos="zoom-in-up" data-aos-duration="1000"
+        class="d-flex gap-5  mb-5 container  mt-5 flex-wrap">
+
+
+      </div>
+
+      <div class=" w-100 scale my-5"></div>
+
+      <a href="./foodStorage.html" type="button" class="btn btn-outline-danger mt-5 mb-5 mb-1  position-relative">Fod
+        Storage</a>
+
+      <div id="foodstorageSection" data-aos="zoom-in-up" data-aos-duration="1000"
+        class="d-flex gap-5  mb-5 container  mt-5 flex-wrap">
+
+       
+
+        
+
+      </div>
+      <div class=" w-100 scale my-5"></div>
+
+  </section>
+
+
+  <footer class="footer mt-auto   ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Contact Details</h5>
+          <p><i class="fas fa-map-marker-alt"></i> L-562 sector 5-c/3 North A North
+            Karachi, Karachi, 75850</p>
+          <p><i class="fas fa-map-marker-alt"></i> L-562 sector 5-c/3 North A North
+            Karachi, Karachi, 75850
+          </p>
+          <p><i class="fas fa-phone"></i> (+92) 03323439015</p>
+          <p>Customer Support: 7 Days a Week, 9:00am - 10:00pm</p>
+          <div class="social-icons mt-2">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+
+        <div class="col-md-2">
+          <h5>Customer Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Contact Us and Location</a></li>
+            <li><a href="#">Delivery Info</a></li>
+            <li><a href="#">Tasha-Loyalty</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h5>Information</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Return & Refund</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-5">
+          <h5>Subscribe our Newsletter</h5>
+          <p>Get the <strong>latest offers</strong> and promotions!</p>
+          <form class="d-flex mb-3">
+            <input type="email" class="form-control me-2" placeholder="Enter your email">
+            <button class="btn btn-dark" type="submit">Subscribe</button>
+          </form>
+          <div class="app-badges d-flex">
+            <img class="image-gap me-2" style="border-radius: 10px;" src="./img/Play store.PNG" alt="Google Play">
+            <img style="border-radius: 10px;" src="./img/app store.PNG" alt="App Store">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer-bottom text-center mt-4">
+        <div class="payment-icons mb-2">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+          <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="MasterCard">
+          <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB">
+          <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal">
+        </div>
+        <p class="mb-0">&copy; 2025 Tasha.pk. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    let getITem = async () => {
+      const item = await fetch('./db/mostSelling.json')
+      const res = await item.json()
+      let section = document.querySelector('section');
+
+      res.map(product => {
+        let div = document.createElement('div');
+
+        div.setAttribute("data-aos", "zoom-in-up")
+        div.setAttribute("data-aos-duration", "1000")
+
+        div.style.width = '18rem';
+
+        div.innerHTML = `
+           <div class="product-card">
+            <div class="discount-badge">${product.discount}% OFF</div>
+            <div class="product-img">
+              <img src=${product.image} alt=${product.title}>
+            </div>
+            <h5 class="product-title">${product.title}</h5>
+            
+            <div>Price: $<span class="product-price">${product.discountPrice}</span>
+              <span class="old-price">$${product.price}</span>
+            </div>
+            <div class="text-start">
+              Rating: ${'<i class="fa-solid fa-star text-warning"></i>'.repeat(product.rating)}
+            </div>
+            <div class="text-start">Sold: ${product.sold}</div>
+            <div class="text-start">Stock: <span class="text-primary">${product.availability}</span></div>
+            <div class="mb-3"></div>
+            <button class="btn btn-danger">Add to Cart</button>
+            <button class="btn ${product.availability == 'Out of Stock' ? "btn-secondary btn-notallowed" : "btn-success"}">
+              Buy Now
+            </button>
+          </div>
+        
+          `;
+        section.appendChild(div);
+      });
+
+    }
+
+    getITem();
+
+    let categoryData = async (file, categorySection) => {
+    
+      const item = await fetch(`./db/${file}.json`)
+      const res = await item.json()
+      let section = document.querySelector(`#${categorySection}`);
+
+      res.splice(0,6).map(product => {
+        let div = document.createElement('div');
+
+       
+
+        div.setAttribute("data-aos", "zoom-in-up")
+        div.setAttribute("data-aos-duration", "1000")
+
+        div.style.width = '20rem';
+
+        div.innerHTML = `
+           <div class="product-card">
+            <div class="discount-badge">${product.discount}% OFF</div>
+            <div class="product-img">
+              <img src=${product.image} alt=${product.title}>
+            </div>
+            <h5 class="product-title">${product.title}</h5>
+            
+            <div>Price: $<span class="product-price">${product.discountPrice}</span>
+              <span class="old-price">$${product.price}</span>
+            </div>
+            <div class="text-start">
+              Rating: ${'<i class="fa-solid fa-star text-warning"></i>'.repeat(product.rating)}
+            </div>
+            <div class="text-start">Sold: ${product.sold}</div>
+            <div class="text-start">Stock: <span class="text-primary">${product.availability}</span></div>
+            <div class="mb-3"></div>
+            <button class="btn btn-danger">Add to Cart</button>
+            <button class="btn ${product.availability == 'Out of Stock' ? "btn-secondary btn-notallowed" : "btn-success"}">
+              Buy Now
+            </button>
+          </div>
+        
+          `;
+        section.appendChild(div);
+      })
+    }
+
+    categoryData('cookware','cookwareSection');
+    categoryData('refrigeration','refrigerationSection');
+    categoryData('foodstorage','foodstorageSection');
+    categoryData('appliances','appliancesSection');
+
+
+  </script>
+
+</body>
+
+</html>

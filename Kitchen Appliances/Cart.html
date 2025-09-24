@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | TASHA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <style>
+
+
+        .card {
+            border-radius: 15px;
+        }
+
+        .btn-theme {
+            background: linear-gradient(135deg, #e63946, #b44a53);
+            color: #fff;
+            border-radius: 30px;
+        }
+
+        .btn-theme:hover {
+            background: linear-gradient(135deg, #b44a53, #6e363b);
+        }
+
+        .quantity-input {
+            width: 60px;
+            text-align: center;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+      <a href="#">
+        <span class="navbar-brand text-light"><i class="fa-solid fa-kitchen-set"></i> TASHA</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse justify-content-center navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="./cookware.html">Cookware</a></li>
+              <li><a class="dropdown-item" href="./refrigeration.html">Refrigeration</a></li>
+              <li><a class="dropdown-item" href="./appliances.html">Appliances</a></li>
+              <li><a class="dropdown-item food-storage" href="./foodStorage.html">Food Storage</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="./support.html">Support</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class=" fontawesomes collapse navbar-collapse" id="navbarNavDropdown">
+
+        <a href="/profile.html">
+          <i style="color: white;" class="fa-solid fa-user"></i>
+        <span role="button">Profile</span>
+        </a>
+        
+        <a href="/Order.html">
+          <i style="color: white;" class="fa-solid fa-heart"></i>
+        <span role="button">Order</span>
+        </a>
+        
+        <a href="/Cart.html">
+          <i style="color: white;" class="fa-solid fa-cart-shopping"></i>
+        <span role="button">Cart</span>
+        </a>
+      </div>
+
+
+    </div>
+  </nav>
+
+
+    <main class="container py-5">
+        <h2 class="mb-4 text-center">🛒 My Cart</h2>
+
+        <div class="row g-4">
+
+            <div class="col-lg-8">
+
+                
+                <div class="card shadow p-3 mb-3">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 text-center">
+                            <img style="height: 70px;" src="./assets/cookware/cookware1.png" class="img-fluid rounded"
+                                alt="Cookware">
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="mb-1">Non-Stick Frying Pan</h5>
+                            <p class="text-muted">$25.99</p>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center">
+                            <button class="btn btn-outline-secondary btn-sm">-</button>
+                            <input type="text" class="form-control mx-1 quantity-input" value="1">
+                            <button class="btn btn-outline-secondary btn-sm">+</button>
+                        </div>
+                        <div class="col-md-2 fw-bold">$25.99</div>
+                        <div class="col-md-1 text-end">
+                            <button class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow p-3 mb-3">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 text-center">
+                            <img style="height: 70px;" src="./assets/refrigeration/minifridge.png"
+                                class="img-fluid rounded" alt="Fridge">
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="mb-1">Mini Refrigerator</h5>
+                            <p class="text-muted">$199.99</p>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center">
+                            <button class="btn btn-outline-secondary btn-sm">-</button>
+                            <input type="text" class="form-control mx-1 quantity-input" value="1">
+                            <button class="btn btn-outline-secondary btn-sm">+</button>
+                        </div>
+                        <div class="col-md-2 fw-bold">$199.99</div>
+                        <div class="col-md-1 text-end">
+                            <button class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow p-3 mb-3">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 text-center">
+                            <img style="height: 70px;" src="./assets/cookware/cookware1.png" class="img-fluid rounded"
+                                alt="Cookware">
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="mb-1">Non-Stick Frying Pan</h5>
+                            <p class="text-muted">$25.99</p>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center">
+                            <button class="btn btn-outline-secondary btn-sm">-</button>
+                            <input type="text" class="form-control mx-1 quantity-input" value="1">
+                            <button class="btn btn-outline-secondary btn-sm">+</button>
+                        </div>
+                        <div class="col-md-2 fw-bold">$25.99</div>
+                        <div class="col-md-1 text-end">
+                            <button class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        
+            <div class="col-lg-4">
+                <div class="card shadow p-4">
+                    <h5 class="mb-3">Order Summary</h5>
+                    <div class="d-flex justify-content-between">
+                        <span>Subtotal</span>
+                        <span>$225.98</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between fw-bold">
+                        <span>Total</span>
+                        <span>$225.98</span>
+                    </div>
+                    <button class="btn btn-theme w-100 mt-3">Proceed to Checkout</button>
+                </div>
+            </div>
+            
+        </div>
+
+    </main>
+
+    <footer class="footer mt-auto   ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Contact Details</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> L-562 sector 5-c/3 North A North
+                        Karachi, Karachi, 75850</p>
+                    <p><i class="fas fa-map-marker-alt"></i> L-562 sector 5-c/3 North A North
+                        Karachi, Karachi, 75850
+                    </p>
+                    <p><i class="fas fa-phone"></i> (+92) 03323439015</p>
+                    <p>Customer Support: 7 Days a Week, 9:00am - 10:00pm</p>
+                    <div class="social-icons mt-2">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2">
+                    <h5>Customer Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact Us and Location</a></li>
+                        <li><a href="#">Delivery Info</a></li>
+                        <li><a href="#">Tasha-Loyalty</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>Information</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Return & Refund</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-5">
+                    <h5>Subscribe our Newsletter</h5>
+                    <p>Get the <strong>latest offers</strong> and promotions!</p>
+                    <form class="d-flex mb-3">
+                        <input type="email" class="form-control me-2" placeholder="Enter your email">
+                        <button class="btn btn-dark" type="submit">Subscribe</button>
+                    </form>
+                    <div class="app-badges d-flex">
+                        <img class="image-gap me-2" style="border-radius: 10px;" src="./img/Play store.PNG"
+                            alt="Google Play">
+                        <img style="border-radius: 10px;" src="./img/app store.PNG" alt="App Store">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer-bottom text-center mt-4">
+                <div class="payment-icons mb-2">
+                    <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+                    <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="MasterCard">
+                    <img src="https://img.icons8.com/color/48/jcb.png" alt="JCB">
+                    <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal">
+                </div>
+                <p class="mb-0">&copy; 2025 Tasha.pk. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

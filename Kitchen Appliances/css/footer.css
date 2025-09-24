@@ -1,0 +1,90 @@
+
+.bg-maroon {
+  background-color: #a3444a;
+}
+
+.text-maroon {
+  color: #a3444a;
+}
+
+.btn-maroon {
+  background-color: #a3444a;
+  color: white;
+  border: none;
+}
+
+.btn-maroon:hover {
+  background-color: #8c3c41;
+  color: white;
+}
+
+.btn-maroon:hover {
+  background-color: #8c3c41;
+  color: white;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.col-md-6 {
+  margin-bottom: 90px;
+}
+
+
+.footer {
+  background-color: #07288d22;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer h5{
+  color:#000a3bd4;
+  font-weight: bold;
+}
+
+.footer p{
+  color: black;
+}
+
+.footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer .social-icons i {
+  font-size: 22px;
+  margin-right: 15px;
+  color: #000;
+  transition: 0.3s;
+}
+
+.footer .social-icons i:hover {
+  color: #ffffff;
+}
+
+.footer .payment-icons img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #aa6166;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.footer input[type="email"] {
+  max-width: 250px;
+}
+
+.app-badges img {
+  height: 40px;
+  margin-right: 10px;
+}

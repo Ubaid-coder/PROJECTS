@@ -1,0 +1,12 @@
+.container h2{
+    font-size: 3rem ;
+    color: #ab6c3f9c;
+}
+
+.support-btn{
+    background-color: #000a3bd4;
+}
+
+.support-btn:hover{
+    background-color: #000a3b50;
+}

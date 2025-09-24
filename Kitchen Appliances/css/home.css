@@ -1,0 +1,45 @@
+
+
+.carousel-item img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+
+}
+
+.carousel-control-next-icon {
+   background-color: rgba(0, 0, 0, 0.651);
+   border-radius: 50%;
+   height: 40px;
+   width: 40px;
+}
+
+.carousel-control-prev-icon {
+   background-color: rgba(0, 0, 0, 0.651);
+   border-radius: 50%;
+   height: 40px;
+   width: 40px;
+}
+
+section h1 {
+   background-color: #788cebde;
+   text-align: center;
+   color: #fff;
+}
+
+
+.scale {
+   background-color: #000a3bd4;
+   border: none;
+   height: 1px;
+
+
+}
+
+.categories-btns{
+   margin-bottom: 1.5rem !important;
+}
+
+.product-card{
+   height: 500px ;
+}

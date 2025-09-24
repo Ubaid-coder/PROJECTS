@@ -1,0 +1,32 @@
+
+h1, h5{
+    color: #000a3bd4;
+}
+
+
+.card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 60%;
+      margin: 15px auto 0;
+}
+
+i{
+    color: #000a3bd4;
+}
+
+.card-hover:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.card-hover{
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.stars{
+    color: gold;
+}
