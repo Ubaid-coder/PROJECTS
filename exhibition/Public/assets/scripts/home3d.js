@@ -13,7 +13,7 @@ scene.background = new THREE.Color('#070a1a');
 
 let model;
 const loader = new GLTFLoader();
-loader.load('./assets/models/earth.glb', (gltf) => {
+loader.load('Public/assets/models/earth.glb', (gltf) => {
     model = gltf.scene;
     scene.add(model);
 })

@@ -71,7 +71,7 @@ scene.add(directionalLight);
 
 let model;
 const loader = new GLTFLoader();
-loader.load('./assets/models/microscope.glb', (gltf) => {
+loader.load('Public/assets/models/microscope.glb', (gltf) => {
   model = gltf.scene;
   model.scale.set(2, 2, 2);
   model.rotation.y = Math.PI;

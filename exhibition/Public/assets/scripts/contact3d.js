@@ -25,7 +25,7 @@ let mixer;
 let model;
 const loader = new GLTFLoader();
 
-loader.load('./assets/models/robot.glb', (gltf) => {
+loader.load('Public/assets/models/robot.glb', (gltf) => {
   model = gltf.scene;
   
   scene.add(model);

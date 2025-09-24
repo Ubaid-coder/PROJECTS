@@ -395,7 +395,7 @@ renderer.domElement.style.touchAction = 'pan-y';
 // Initialize both models in their respective canvases
 init3DModel({
   canvasId: 'heart3d',
-  modelPath: './assets/models/heart.glb',
+  modelPath: 'Public/assets/models/heart.glb',
   cameraPosition: { x: 0, y: 0, z: 0.7 },
   modelScale: { x: 20, y: 20, z: 20 },
   texturePath:'../../heart.png'
@@ -403,7 +403,7 @@ init3DModel({
 
 init3DModel({
   canvasId: 'brain3d',
-  modelPath: './assets/models/brain.glb',
+  modelPath: 'Public/assets/models/brain.glb',
   cameraPosition: { x: 0, y: 0, z: .7 },
   modelrotation: {x:0, y:-2, z:0},
   modelScale: window.innerWidth > 500?{ x: 4, y: 4, z: 4 }:{ x: 3.5, y: 3.5, z: 3.5 },
@@ -413,7 +413,7 @@ init3DModel({
 
 init3DModel({
   canvasId: 'ear3d',
-  modelPath: './assets/models/ear.glb',
+  modelPath: 'Public/assets/models/ear.glb',
   cameraPosition: { x: 0, y: 0, z: 0.6 },
   modelScale: { x: 15, y: 15, z: 15 },
   modelrotation: { x: 0, y: 1, z: 0 },

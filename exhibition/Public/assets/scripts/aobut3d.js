@@ -18,7 +18,7 @@ camera.position.z = 0.1;
 
 let model;
 let loader = new GLTFLoader();
-loader.load('./assets/models/hero.glb', (gltf) => {
+loader.load('Public/assets/models/hero.glb', (gltf) => {
     model = gltf.scene;
    
     scene.add(model);
