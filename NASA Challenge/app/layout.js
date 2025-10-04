@@ -1,0 +1,37 @@
+import { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import logo from '../Public/assets/StellarCoders.png'
+import "./globals.css";
+
+export const metadata = {
+  title: "Stellar Coders",
+  favicon: logo,
+}
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+
+export default function RootLayout({
+  children,
+}) {
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
+        suppressHydrationWarning={true}
+
+      >
+        {children}
+
+      </body>
+    </html>
+  );
+}
